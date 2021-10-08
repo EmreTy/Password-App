@@ -22,6 +22,22 @@ h1 {
     font-size: 6em;
     margin-top: 4rem;
     color: white;
+    /*input:checked ~ h1*/
+    animation: coloring 10s infinite;
+  }
+  
+  @keyframes coloring {
+    0% {
+      text-shadow: -10px -5px 1px black;
+    }
+  
+    25% {
+      text-shadow: 10px -5px 15px black;
+    }
+  
+    50% {
+      text-shadow: 10px 5px 1px black;
+    }
 }
 
 #passwd {
@@ -42,3 +58,9 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
 } 
+
+p::after {
+    content: "❌";
+
+}
+/*✅*/
