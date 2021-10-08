@@ -40,12 +40,13 @@ h1 {
     }
 }
 
-#passwd {
+#passwd1, #passwd2 {
     border: solid black 3px;
     border-radius: 2px;
     height: 2rem;
     margin-bottom: 5px;
 }
+
 
 .btn {
     color: white;
