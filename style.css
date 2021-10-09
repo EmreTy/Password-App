@@ -23,20 +23,20 @@ h1 {
     margin-top: 4rem;
     color: white;
     /*input:checked ~ h1*/
-    animation: coloring 10s infinite;
+    animation: coloring 8s infinite;
   }
   
   @keyframes coloring {
     0% {
-      text-shadow: -10px -5px 1px black;
+      text-shadow: -8px -3px 1px black;
     }
   
     25% {
-      text-shadow: 10px -5px 15px black;
+      text-shadow: 8px -3px 15px black;
     }
   
     50% {
-      text-shadow: 10px 5px 1px black;
+      text-shadow: 8px 3px 1px black;
     }
 }
 
@@ -52,6 +52,7 @@ h1 {
     color: white;
     background-color: black;
     margin-bottom: 3rem;
+
     
 }
 
