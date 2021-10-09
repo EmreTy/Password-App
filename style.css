@@ -49,10 +49,13 @@ h1 {
 
 
 .btn {
+    font-size: 1.2rem;
     color: white;
     background-color: black;
     margin-bottom: 3rem;
-
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 2px;
     
 }
 
