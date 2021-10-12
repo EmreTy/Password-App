@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Password check</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header><h1>Password Check</h1></header>
-        <form action="form">
-            <div class="passw">
-                <label for="passwd1"></label>  
-                <input type="password" id="passwd1" size="30" maxlength="10" required>
-                <br>
-                <label for="passwd2"></label>  
-                <input type="password" id="passwd2" size="30" maxlength="10" required>
-                <br>
-                <button class="btn">Show Password</button>
-                <div class="tests">
-                    <p id="p1">Passwords are equal <span id="equal">❌</span></p>
-                    <p id="p2">Lower Case Letters <span id="lower">❌</span></p>
-                    <p id="p3">Upper Case Letters <span id="upper">❌</span></p>
-                    <p id="p4">Contain Numbers <span id="numbers">❌</span></p>
-                    <p id="p5">At least 10 characters long <span id="tenCharac">❌</span></p>
-                </div>
-            </div>
-        </form>
+      <header><h1>Password Check</h1></header>
+      <form onsubmit="return false">
+        <div class="passw">
+          <label for="passwd1"></label>
+          <input
+            type="password"
+            id="passwd1"
+            size="30"
+            maxlength="10"
+            required
+          />
+          <br />
+          <label for="passwd2"></label>
+          <input
+            type="password"
+            id="passwd2"
+            size="30"
+            maxlength="10"
+            required
+          />
+          <br />
+          <button onclick="buttonShowHidden()" id="btn">Show Password</button>
+          <div class="tests">
+            <p id="p1">Passwords are equal <span id="equal">❌</span></p>
+            <p id="p2">Lower Case Letters <span id="lower">❌</span></p>
+            <p id="p3">Upper Case Letters <span id="upper">❌</span></p>
+            <p id="p4">Contain Numbers <span id="numbers">❌</span></p>
+            <p id="p5">
+              At least 10 characters long <span id="tenCharac">❌</span>
+            </p>
+          </div>
+        </div>
+      </form>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
